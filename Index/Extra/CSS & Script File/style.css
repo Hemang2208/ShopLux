@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #f39c12;
+    transition: width 0.3s;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Highlighted Section */
+.highlighted-uvp {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from { opacity: .4; }
+    to { opacity: 1; }
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Added gap for better spacing */
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(25% - 20px); /* Responsive for larger screens */
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modal Styles */
+.modal,
+.cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Darkened for better visibility */
+}
+
+.modal-content,
+.cart-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Close Button Styles */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f39c12;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #9abfe4;
+    color: white;
+}
+
+.footer-links h3 {
+    margin: 0 0 10px;
+}
+
+/* Button Styles */
+.more-details,
+.checkout-button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.more-details:hover,
+.checkout-button:hover {
+    background-color: #f39c12; /* Consistent hover effect */
+}
+
+/* Cart Modal Styles */
+.cart-modal-content {
+    width: 40%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 20px); /* Full width on very small screens */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Stack items */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px; /* Space between links */
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(193, 58, 58, 0.1);
+    margin: 20px auto; /* Centering sections */
+    width: 90%; /* Responsive section width */
+    max-width: 1200px; /* Limit max width */
+}

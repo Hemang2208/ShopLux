@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Featured Products - ShopLux</title>
+</head>
+
+<body>
+    <main>
+        <section id="featured-products" class="featured-section">
+            <h1>Featured Products</h1>
+            <div class="product-grid">
+
+                <article class="product-item">
+                    <img src="Images/Product_Diamond_Ring.jpg" alt="Diamond Ring" height="300" width="300">
+                    <h3>Diamond Ring</h3>
+                    <p>$499.99</p>
+                    <label for="size1">Size:</label>
+                    <select id="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color1">Color:</label>
+                    <select id="color1">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                    <button class="more-details" onclick="toggleDetails('details1')">More Details</button>
+                    <div class="details" id="details1">
+                        <p>Additional information about the Diamond Ring.</p>
+                        <p>This is the 24k Diamond Ring from India.</p>
+                        <button onclick="addToCart('Diamond Ring', 499.99)">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="Images/Pruduct_RolexTimex_Watch.jpg" alt="Rolex Timex Watch" height="300"
+                        width="300">
+                    <h3>Rolex Timex Watch</h3>
+                    <p>$399.99</p>
+                    <label for="size2">Size:</label>
+                    <select id="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color2">Color:</label>
+                    <select id="color2">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                    <button class="more-details" onclick="toggleDetails('details2')">More Details</button>
+                    <div class="details" id="details2">
+                        <p>Additional information about the Rolex Timex Watch.</p>
+                        <p>This is the best watch in the world.</p>
+                        <button onclick="addToCart('Rolex Timex Watch', 399.99)">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="Images/Product_Nike_Shoes.jpg" alt="Nike Shoes" height="300" width="300">
+                    <h3>Nike Shoes</h3>
+                    <p>$199.99</p>
+                    <label for="size3">Size:</label>
+                    <select id="size3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color3">Color:</label>
+                    <select id="color3">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                    <button class="more-details" onclick="toggleDetails('details3')">More Details</button>
+                    <div class="details" id="details3">
+                        <p>Additional information about the Nike Shoes.</p>
+                        <p>The OG Nike Water Jordan Sigma Mids.</p>
+                        <button onclick="addToCart('Nike Shoes', 199.99)">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <img src="Images/Product_Panda_Chain.jpg" alt="Panda Neck Chain" height="300" width="300">
+                    <h3>Panda Neck Chain</h3>
+                    <p>$259.99</p>
+                    <label for="size4">Size:</label>
+                    <select id="size4">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <label for="color4">Color:</label>
+                    <select id="color4">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                    <button class="more-details" onclick="toggleDetails('details4')">More Details</button>
+                    <div class="details" id="details4">
+                        <p>Additional information about the Panda Neck Chain.</p>
+                        <p>The OP Panda Chain.</p>
+                        <button onclick="addToCart('Panda Neck Chain', 259.99)">Add to Cart</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
