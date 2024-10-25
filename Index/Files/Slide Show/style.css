@@ -51,3 +51,234 @@ body {
 .dot.active {
     background-color: #717171;
 }
+
+/* General styles for all screens */
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* iPhone 13 and New Models */
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 2) {
+    .welcome-message {
+        margin: 0 15px;
+        /* Adjust margins */
+    }
+
+    .header-nav {
+        height: 70px;
+        /* Increase height for better touch targets */
+        display: flex;
+        /* Use flex for alignment */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center items vertically */
+    }
+
+    .header-nav ul {
+        gap: 20px;
+        /* Adjust gap */
+        width: 100%;
+        /* Full width */
+        display: flex;
+        /* Ensure ul is a flex container */
+        justify-content: center;
+        /* Center items */
+    }
+
+    .projects-header {
+        padding: 25px;
+        /* Adjust padding */
+    }
+
+    .project-previews {
+        flex-direction: column;
+        /* Stack project cards */
+        gap: 15px;
+        /* Adjust gap */
+    }
+
+    .contact-container {
+        margin: 80px auto;
+        /* Adjust margins */
+    }
+}
+
+/* iPhone 13 Pro Max and New Models */
+@media only screen and (width: 430px) and (height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    .welcome-message {
+        margin: 0 25px;
+        /* Adjust margins */
+    }
+
+    .header-nav {
+        height: 80px;
+        /* Increase height for better touch targets */
+        display: flex;
+        /* Use flex for alignment */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center items vertically */
+    }
+
+    .header-nav ul {
+        gap: 25px;
+        /* Adjust gap */
+    }
+
+    .projects-header {
+        padding: 35px;
+        /* Adjust padding */
+    }
+
+    .project-previews {
+        flex-direction: column;
+        /* Stack project cards */
+        gap: 25px;
+        /* Adjust gap */
+    }
+
+    .contact-container {
+        margin: 120px auto;
+        /* Adjust margins */
+    }
+}
+
+/* iPads and Other Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .welcome-message {
+        margin: 0 30px;
+        /* Adjust margins */
+    }
+
+    .header-nav {
+        height: 90px;
+        /* Increase height for better touch targets */
+        display: flex;
+        /* Use flex for alignment */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center items vertically */
+    }
+
+    .header-nav ul {
+        gap: 30px;
+        /* Adjust gap */
+    }
+
+    .projects-header {
+        padding: 40px;
+        /* Adjust padding */
+    }
+
+    .project-previews {
+        flex-direction: row;
+        /* Align project cards in a row */
+    }
+
+    .contact-container {
+        margin: 150px auto;
+        /* Adjust margins */
+    }
+}
+
+/* Samsung Devices and Foldable Phones */
+@media only screen and (max-width: 640px) {
+    .welcome-message {
+        margin: 0 10px;
+        /* Adjust margins */
+    }
+
+    .header-nav {
+        height: 70px;
+        /* Increase height for better touch targets */
+        display: flex;
+        /* Use flex for alignment */
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center items vertically */
+    }
+
+    .header-nav ul {
+        gap: 15px;
+        /* Adjust gap */
+        width: 100%;
+        /* Full width */
+    }
+
+    .projects-header {
+        padding: 20px;
+        /* Adjust padding */
+    }
+
+    .project-previews {
+        flex-direction: column;
+        /* Stack project cards */
+        gap: 10px;
+        /* Adjust gap */
+    }
+
+    .contact-container {
+        margin: 100px auto;
+        /* Adjust margins */
+    }
+}
+
+/* General styles for screens with a 19.5:9 aspect ratio */
+@media only screen and (min-aspect-ratio: 195/90) {
+    .intro-content {
+        font-size: 1.5em;
+        /* Adjust font size */
+    }
+
+    .project-previews {
+        flex-direction: row;
+        /* Align project cards in a row */
+    }
+
+    .project-card img {
+        width: 150px;
+        /* Adjust image size */
+        height: 150px;
+        /* Adjust image size */
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+    .header-title h1 {
+        font-size: 1.5em;
+        /* Reduce font size */
+    }
+
+    .welcome-message h2 {
+        font-size: 2em;
+        /* Reduce font size */
+    }
+
+    .welcome-message p {
+        font-size: 1em;
+        /* Reduce font size */
+    }
+
+    .project-previews {
+        flex-direction: column;
+        /* Align project cards in a column */
+    }
+
+    .contact-container {
+        padding: 20px;
+        /* Reduce padding */
+    }
+
+    .site-footer ul {
+        flex-direction: column;
+        /* Stack footer links */
+        gap: 10px;
+        /* Adjust gap */
+    }
+}
